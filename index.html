@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <form action="" id="multipartForm" enctype="multipart/form-data">
+            <!-- // 1eme etape -->
+            <div class="tab">
+                <h2>Informations personnelles</h2>
+                <label for="">Nom</label>
+                <input type="text" name="nom" id="nom">
+                <label for="">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <br>
+            <!-- 2eme etape -->
+            <div class="tab">
+                <h2>Informations de contact</h2>
+                <label for="">Telephone</label>
+                <input type="tel" name="tel" id="tel">
+                <label for="">Adresse</label>
+                <input type="text" name="adresse" id="adresse">
+            </div>
+    
+             <!-- 3eme etape -->
+             <div class="tab">
+                <h2>Confirmation</h2>
+                <p>Confirmer vos informations</p>
+                <label for=""><input type="checkbox" name="" id="confirm" name="confirm" required>J'ai tout verifie</label>
+            </div>
+            <br>
+            <div class="navigation-buttons">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Precedent</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+            </div>
+        </form>
+   
+    <script src="script.js"></script>
+</body>
+</html>
