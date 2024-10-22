@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div id="logo">
+            <h2>LucasDev</h2>
+        </div>
+        <div id="google_translate_element"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://">Accueil</a></li>
+                <li><a href="http://">Services</a></li>
+                <li><a href="http://">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
         <form action="" id="multipartForm" enctype="multipart/form-data">
             <!-- // 1eme etape -->
             <div class="tab">
@@ -40,5 +53,16 @@
         </form>
    
     <script src="script.js"></script>
+    <script src="script.js"></script>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'fr'},
+                'google_translate_element'
+            );
+        } 
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
